@@ -49,6 +49,7 @@ $(document).ready(function(){
 					$('#id').val(data.id);
 					$('#sales_name').val(data.name);
 					$('#sales_email').val(data.email);	
+					$('#sales_salary').val(data.salary);	
 					$('#newPassword').text('New Password');
 					$('.modal-title').html("<i class='fa fa-plus'></i> Editar Vendedor");
 					$('#action').val('updateSalesRep');

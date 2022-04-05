@@ -76,6 +76,7 @@ class User {
 			$rows[] = $salesRep['id'];
 			$rows[] = ucfirst($salesRep['name']);			
 			$rows[] = $salesRep['email'];
+			$rows[] = $salesRep['salary'];
 			$rows[] = $salesRep['status'];					
 			$rows[] = '<button  type="button" name="view" id="'.$salesRep["id"].'" class="btn btn-info btn-xs view"><span title="Ver Proyectos">Ver Proyectos</span></button>';			
 			$rows[] = '<button type="button" name="update" id="'.$salesRep["id"].'" class="btn btn-warning btn-xs update"><span class="glyphicon glyphicon-edit" title="Edit"></span></button>';			
@@ -129,11 +130,12 @@ class User {
 		
 			$this->sales_name = htmlspecialchars(strip_tags($this->sales_name));			
 			$this->sales_email = htmlspecialchars(strip_tags($this->sales_email));
+			$this->sales_salary = htmlspecialchars(strip_tags($this->sales_salary));
 			$this->sales_password = md5(htmlspecialchars(strip_tags($this->sales_password)));
 			$this->roles = 'sales';		
 			$this->status = 1;			
 			
-			$stmt->bind_param("ssssi", $this->sales_name, $this->sales_email, $this->sales_password, $this->roles, $this->status);
+			$stmt->bind_param("sssssi", $this->sales_name, $this->sales_email,$this->sales_salary, $this->sales_password, $this->roles, $this->status);
 			
 			if($stmt->execute()){
 				return true;
@@ -165,9 +167,10 @@ class User {
 			
 			$this->sales_name = htmlspecialchars(strip_tags($this->sales_name));			
 			$this->sales_email = htmlspecialchars(strip_tags($this->sales_email));
+			$this->sales_salary = htmlspecialchars(strip_tags($this->sales_salary));
 			$this->sales_password = md5(htmlspecialchars(strip_tags($this->sales_password)));	
 			
-			$stmt->bind_param("sssi", $this->sales_name, $this->sales_email, $this->sales_password, $this->sales_rep_id);
+			$stmt->bind_param("ssssi", $this->sales_name, $this->sales_email, $this->sales_salary, $this->sales_password, $this->sales_rep_id);
 			
 			if($stmt->execute()){
 				return true;

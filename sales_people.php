@@ -40,6 +40,7 @@ include('inc/header.php');
 					<th>Id</th>					
 					<th>Nombre</th>					
 					<th>Email</th>
+					<th>Sueldo</th>
 					<th>Estatus</th>	
 					<th></th>	
 					<th></th>	
@@ -89,12 +90,16 @@ include('inc/header.php');
 						</div>					
 						
 						<div class="form-group">
-							<label for="address" class="control-label">Correo</label>							
-							<input type="email" class="form-control" id="sales_email" name="sales_email" placeholder="Correo" required>									
+							<label for="email" class="control-label">Correo</label>							
+							<input pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" type="email" class="form-control" id="sales_email" name="sales_email" placeholder="Correo" required>									
+						</div>
+						<div class="form-group"
+							<label for="project" class="control-label">Suedo</label>
+							<input type="number" class="form-control" id="sales_salary" name="sales_salary" placeholder="Salario" required>			
 						</div>
 						<div class="form-group">
 							<label for="address" class="control-label" id="newPassword">Contraseña</label>							
-							<input type="password" class="form-control" id="sales_password" name="sales_password" placeholder="Contraseña" required>									
+							<input regex="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" type="password" class="form-control" id="sales_password" name="sales_password" placeholder=" 8 caracteres minimo, una letra mayusculas una minuscula, un numero y un caracter especial." required>									
 						</div>
 						
 					</div>
