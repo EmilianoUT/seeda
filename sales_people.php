@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+	
+</body>
+</html>
+
+
 <?php
 include_once 'config/Database.php';
 include_once 'class/User.php';
@@ -18,11 +32,15 @@ include('inc/header.php');
 <link rel="stylesheet" href="css/dataTables.bootstrap.min.css" />
 <script src="js/sales_rep.js"></script>	
 <script src="js/general.js"></script>
-<div class="container" style="background-color:#f4f3ef;">  
-	<h2>CRM Proyectos</h2>		
+<div class="container">  
+<nav class="navbar navbar-dark bg-dark">
+  		<div class="container-fluid">
+    		<span class="navbar-brand mb-0 h1">CRM Proyectos</span>
+  		</div>
+</nav>				
 	<?php include('top_menus.php'); ?>	
 	<br>
-	<h4>Vendedores</h4>	
+	<h3>Lista de vendedores</h3>	
 	<div> 	
 		<div class="panel-heading">
 			<div class="row">
@@ -34,7 +52,7 @@ include('inc/header.php');
 				</div>
 			</div>
 		</div>
-		<table id="salesRepListing" class="table table-bordered table-striped">
+		<table id="salesRepListing" class="table table-light table-bordered table-striped">
 			<thead>
 				<tr>						
 					<th>Id</th>					
@@ -94,7 +112,7 @@ include('inc/header.php');
 							<input pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" type="email" class="form-control" id="sales_email" name="sales_email" placeholder="Correo" required>									
 						</div>
 						<div class="form-group"
-							<label for="project" class="control-label">Suedo</label>
+							<label for="project" class="control-label">Sueldo</label>
 							<input type="number" class="form-control" id="sales_salary" name="sales_salary" placeholder="Salario" required>			
 						</div>
 						<div class="form-group">
