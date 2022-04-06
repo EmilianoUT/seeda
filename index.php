@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+	
+</body>
+</html>
+
+
 <?php 
 include_once 'config/Database.php';
 include_once 'class/User.php';
@@ -32,7 +46,7 @@ include('inc/header.php');
 		<h2>CRM Proyectos</h2>			
         <div class="col-md-12">                    
 		<div class="panel panel-info">
-			<div class="panel-heading" style="background:#00796B;color:white;">
+			<div class="panel-heading" style="background:#000000;color:white;">
 				<div class="panel-title">Log In</div>                        
 			</div> 
 			<div style="padding-top:30px" class="panel-body" >
