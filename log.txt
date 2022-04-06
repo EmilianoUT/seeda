@@ -1,0 +1,4 @@
+[][06-04-2022 05:06:46]: 
+[E][06-04-2022 05:07:54]: Ha habido un error inesperado
+[I][06-04-2022 05:07:54]: Todo correcto
+[W][06-04-2022 05:07:54]: Ha habido un warning
